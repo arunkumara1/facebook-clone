@@ -1,0 +1,19 @@
+.sidebar_row {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar_row:hover {
+    background-color: gray;
+}
+
+.sidebar_row > h3 {
+    margin-left: 8px;
+    /* font-size: large; */
+}
+
+.sidebar__icon > .MuiSvgIcon-root  {
+    color: #1197F5;
+}

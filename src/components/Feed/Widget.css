@@ -1,0 +1,5 @@
+.widget{
+display: flex;
+flex:0.25;
+padding: 20px;
+}

@@ -10,37 +10,54 @@ import AddIcon from '@material-ui/icons/Add';
 import MessageIcon from '@material-ui/icons/Message';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Avatar } from '@material-ui/core';
+import Tooltip from '@material-ui/core/Tooltip';
+import { useStateValue } from '../../store/StateProvider';
 
 const Header = () => {
+
+
+    const [{ user }, dispatch] = useStateValue();
+
+
     return (
         <div className="header">
             <div className="header__left">
-            <img src={require('../../assets/fb.png')} alt="" />
-            <div className="header__input">
-                <SearchIcon />
-                <input placeholder="Search Facebook"/>
-            </div>
+                <img src={require('../../assets/fb.png')} alt="" />
+                <div className="header__input">
+                    <SearchIcon />
+                    <input placeholder="Search Facebook" />
+                </div>
             </div>
             <div className="header__center">
-                <div className="header__options">
-                    <HomeIcon />
+                <div className="header__options header__options__active">
+                    <Tooltip title="Home" placement="bottom-end">
+                        <HomeIcon />
+                    </Tooltip>
                 </div>
                 <div className="header__options">
-                    <WatchLaterIcon />
+                    <Tooltip title="Watch" placement="bottom-end">
+                        <WatchLaterIcon />
+                    </Tooltip>
                 </div>
                 <div className="header__options">
-                    <AddToQueueIcon />
+                    <Tooltip title="Queue" placement="bottom-end">
+                        <AddToQueueIcon />
+                    </Tooltip>
                 </div>
                 <div className="header__options">
-                    <NotificationsNoneIcon />
+                    <Tooltip title="Notification" placement="bottom-end">
+                        <NotificationsNoneIcon />
+                    </Tooltip>
                 </div>
                 <div className="header__options">
-                    <GamesIcon />
+                    <Tooltip title="Games" placement="bottom-end">
+                        <GamesIcon />
+                    </Tooltip>
                 </div>
             </div>
             <div className="header__right">
-                <Avatar src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-app-76737.appspot.com/o/images%2F12_08_2020-dhoni8_20619565.jpg?alt=media&token=19f4d73c-0c25-4408-8ff8-d2cd1ac07e66" />
-                <h2>ZAG</h2>
+                <Avatar src={user.photoURL} />
+                <h2>{user.displayName}</h2>
                 <div className="header__right__options">
                     <AddIcon />
                 </div>
