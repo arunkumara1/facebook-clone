@@ -26,11 +26,9 @@ const Feed = () => {
             {posts.map((post) => (
                 <Post
                     key={post.id}
-                    image={post.data.image}
-                    message={post.data.message}
-                    profilePic={post.data.profilePic}
-                    timeStamp={post.data.timeStamp}
-                    user={post.data.user} />
+                    val={post.id}
+                    post={post.data}
+                    />
 
             ))
             }

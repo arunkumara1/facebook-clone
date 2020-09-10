@@ -1,7 +1,6 @@
 .app {
     background-color: #f1f2f5;
-    /* height:100vh; */
-    height: auto;
+     height: auto !important;
 }
 
 .app__body {
@@ -10,6 +9,7 @@
 }
 
 
-::-webkit-scrollbar {
-    display: none;
-}
+ ::-webkit-scrollbar {
+     display: none; 
+
+ }

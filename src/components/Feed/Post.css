@@ -51,11 +51,76 @@
 .post_bottom__option:hover {
     cursor: pointer;
 }
-.post_bottom__option > h3 {
-    margin-left: 8px;
-}
+
+
 
 .post_bottom__option > .MuiSvgIcon-root {
     color: grey;
     /* font-size: xx-large; */
+}
+
+.post__comment {
+    border-top: 1px solid lightgray;
+    height: 280px;
+}
+
+.post__comment__button {
+    display: none;
+}
+
+.post__comment__top {
+    display: flex;
+    align-items: center;
+    /* height: 50px; */
+    padding: 15px;
+    border-bottom: 1px solid #eff2f5;
+    z-index: 99 ;
+    position: sticky !important; 
+    top: 0;
+}
+
+.post__comment-bottom{
+    overflow: scroll;
+    height: 190px;
+}
+
+.post__comment__bottom_container {
+    display: flex;
+    top:0;
+    flex-direction: column-reverse;
+}
+
+
+.post__comment__top > form  {
+    flex: 1;
+    display: flex;
+}
+
+.post__comment__container {
+    flex:1;
+    width: 100%;
+}
+
+.post__comment__container > input {
+    height: 32px;
+    outline-width: 0;
+    border:none;
+    padding: 5px 20px;
+    border-radius: 999px;
+    margin: 0 10px;
+    background-color: #F0F2F5;
+     width: 85%; 
+}
+
+.post__comment__top > form > input {
+    outline-width: 0;
+    border:none;
+    padding: 5px 20px;
+    border-radius: 999px;
+    margin: 0 10px;
+    background-color: #F0F2F5;
+}
+
+.post__comment-bottom > ::-webkit-scrollbar {
+    display: block;
 }

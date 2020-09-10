@@ -1,0 +1,20 @@
+.comment_section {
+    display: flex;
+    padding: 15px;
+    height:30px;
+
+}
+
+.comment_section__image > .MuiAvatar-circle {
+    height: 40px !important;
+}
+
+.comment_section__name {
+display: flex;
+flex-direction: column;
+padding:0px 10px;
+}
+
+.comment_usr {
+    font-size: small;
+}

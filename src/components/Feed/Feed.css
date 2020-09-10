@@ -1,5 +1,8 @@
 .feed {
-    /* padding: 15px 20px; */
+    /* padding: 15px 20px; */   
     /* margin-left: 200px; */
-    flex: 0.45; 
+    flex: 0.47; 
+    overflow: scroll;
+    height:90vh;
+    padding: 10px;
 }

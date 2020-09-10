@@ -5,8 +5,10 @@ import DuoIcon from '@material-ui/icons/Duo';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
 import { useStateValue } from '../../store/StateProvider';
-import db from '../../firebase/firebase'
-import firebase from 'firebase'
+import db from '../../firebase/firebase';
+import firebase from 'firebase';
+
+
 const MessageSender = () => {
 
     const [{ user }, dispatch] = useStateValue();
@@ -21,13 +23,14 @@ const MessageSender = () => {
 
         db.collection('posts').add({
             image: image,
+            comments:[],
+            likes:'0',
             message: message,
             profilePic: user.photoURL,
             timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
             user: user.displayName
 
         })
-
 
         setMessage('');
         setImage('');

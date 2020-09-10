@@ -1,5 +1,98 @@
 .widget{
 display: flex;
-flex:0.25;
+flex:0.33;
 padding: 20px;
+/* background-color:  rgb(200, 208, 214); */
+flex-direction: column;
+height:87vh;
+max-height: fit-content;
+padding: 10px;
+}
+
+.widget__chat__area{
+    height: auto;
+    width: auto;
+}
+
+.widget__chat__button {
+    display: none;
+}
+
+.widget__chat__bottom {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    z-index: 105 !important;
+    margin-top: 12px;
+}
+
+
+.widget__chat__top > form  {
+    flex: 1;
+    display: flex;
+}
+
+.widget__chat__container {
+    flex:1;
+    width: 100%;
+}
+
+.widget__chat__container > input {
+    height: 32px;
+    outline-width: 0;
+    border:none;
+    padding: 5px 20px;
+    border-radius: 999px;
+    margin: 0 10px;
+    background-color: lightgray;
+     width: 180%; 
+}
+
+
+.widget__chat__body{
+display: flex;
+flex:1;
+flex-direction: column;
+/* height:fit-content; */
+overflow-y:scroll !important;
+max-height: max-content;
+height:65vh;
+
+
+}
+
+.widget__chat__body > .rce-container-mbox{
+    overflow:unset !important;
+}
+
+.widget__chat__top {
+    position: sticky;
+    top: 0;
+    z-index: 98 !important;
+    height: 120px !important;
+}
+
+.widget__chat__top  > img {
+    height: 100px;
+    width: 485px;
+    /* object-fit: contain; */
+} 
+
+
+
+.widget__chat__new {
+
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    height: 70vh;
+}
+
+.widget__chat__cont{
+    padding:10px 0px;
+    width:225px;
+    text-align:center;
+    background-color: white;
+    border-radius:10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
