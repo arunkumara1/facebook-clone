@@ -54,8 +54,8 @@ display: flex;
 flex:1;
 flex-direction: column;
 /* height:fit-content; */
-overflow-y:scroll !important;
-max-height: max-content;
+overflow:scroll !important;
+/* max-height: max-content; */
 height:65vh;
 
 
@@ -75,7 +75,6 @@ height:65vh;
 .widget__chat__top  > img {
     height: 100px;
     width: 485px;
-    /* object-fit: contain; */
 } 
 
 

@@ -118,7 +118,7 @@ const Post = ({ post: { image, comments, likes, message, profilePic, timeStamp, 
 
             </div>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <div className="post__comment">
+                <div className={ comments.length === 0   ? "post__comment__blk" :  "post__comment" }>
                     <div className="post__comment__top">
                         <Avatar src={user.photoURL} />
                         <form>

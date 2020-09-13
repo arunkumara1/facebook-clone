@@ -4,6 +4,7 @@ import StoryReel from './StoryReel';
 import MessageSender from './MessageSender';
 import Post from './Post';
 import db from '../../firebase/firebase';
+
 const Feed = () => {
 
     const [posts, setPosts] = useState([]);
