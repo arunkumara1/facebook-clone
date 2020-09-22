@@ -9,29 +9,35 @@ import { useStateValue } from './store/StateProvider';
 
 const app = () => {
 
-  const [{ user }, dispatch] = useStateValue();
+  // const [{ user }, dispatch] = useStateValue();
   
+
+  const hello = () => {
+    alert();
+  }
+
   return (
     //BEM
     <div className="app">
-      {!user ? (<Login />) : (
+      {/* {!user ? (<Login />) : (
         <div>
-          {/* Header */}
+          
           <Header />
 
           <div className="app__body">
 
-            {/* Sidebar */}
+            
             <Sidebar />
 
-            {/* Feed */}
+            
             <Feed />
 
-            {/* Widgets */}
+           
             <Widget />
           </div>
         </div>
-      )}
+      )} */}
+      <p>HELLo</p>
     </div>
   );
 }
